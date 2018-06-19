@@ -1,0 +1,7 @@
+name: Magazine Sort
+type: module
+description: 'Provides a views display style for Sorting Magazine content.'
+package: Views
+core: '8.x'
+dependencies:
+- views

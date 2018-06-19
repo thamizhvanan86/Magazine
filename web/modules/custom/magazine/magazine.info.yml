@@ -1,0 +1,8 @@
+name: Magazine Custom
+type: module
+description: 'Magazine view module for Drupal 8.'
+package: Custom
+version: 8.x
+core: 8.x
+dependencies:
+- views

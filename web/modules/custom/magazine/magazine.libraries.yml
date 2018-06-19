@@ -1,0 +1,13 @@
+magazine.forms:
+   version: VERSION
+   css:
+     theme:
+       css/magazine.css: {}
+
+magazine.enable:
+  version: VERSION
+  js:
+    js/magazine.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
