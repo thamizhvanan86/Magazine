@@ -11,3 +11,4 @@ magazine.enable:
   dependencies:
     - core/jquery
     - core/drupalSettings
+    

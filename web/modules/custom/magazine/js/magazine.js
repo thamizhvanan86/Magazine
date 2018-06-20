@@ -5,6 +5,7 @@
    * on selected category
    */
   Drupal.behaviors.exposedfilter_buttons = {
+
     attach: function(context, settings) {
       $('.filter-tab a').on('click', function(e) {
         e.preventDefault();
@@ -26,11 +27,14 @@
         $('#views-exposed-form-pagina-magazine-page-1 input.form-submit').trigger('click');
 
       });
+
     }
+
   };
   
 
   jQuery(document).ajaxComplete(function(event, xhr, settings) {
+
     switch(settings.extraData){
       
       case "pagina_magazine":
@@ -43,8 +47,9 @@
 
       default:
         break;
+    
     };
-  });
 
+  });
 
 })(jQuery);

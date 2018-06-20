@@ -1,4 +1,5 @@
 <?php
+
 function magazine_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id){
     
   /**
@@ -50,4 +51,5 @@ function magazine_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_
   else {
   	//nothing...
   } 
+
 }

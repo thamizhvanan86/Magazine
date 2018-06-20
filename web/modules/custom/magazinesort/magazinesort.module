@@ -4,6 +4,7 @@
  * Implements hook_views_data_alter().
  */
 function magazinesort_views_data_alter(array &$data) {
+
   $data['node__field_event_date']['evento'] = array(
     'title' => t('Custom evento sort'),
     'group' => t('Content'),
@@ -13,6 +14,6 @@ function magazinesort_views_data_alter(array &$data) {
       'id' => 'evento',
     ),
   );
+
 }
 
-?>

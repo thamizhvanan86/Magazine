@@ -16,6 +16,7 @@ class Event extends Date {
    * Called to add the sort to a query.
    */
   public function query() {
+
     $this->ensureMyTable();
 
     $date_alias = "UNIX_TIMESTAMP($this->tableAlias.$this->realField)";
@@ -33,7 +34,9 @@ class Event extends Date {
       $this->options['order'],
       "distance_from_now"
     );
+
   }
+  
 }
 
 ?>

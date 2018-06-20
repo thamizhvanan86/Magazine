@@ -2,7 +2,7 @@
  * Hide <select> and submit-button
  */
 #views-exposed-form-filter-magazine-page-1 .form-type-select {
-	display: none;
+   display: none;
 }
 #views-exposed-form-filter-magazine-page-1 .form-submit {
 	display: none;
@@ -13,6 +13,7 @@
  * instead of in this module
  */ 
 .magazine-list {
+
 	display: block;
   text-align: left;
   margin: 0 auto;
@@ -20,7 +21,9 @@
   font-family: "montserratsemibold",sans-serif;
   font-size: 12px;
 }
+
 .magazine-list li {
+
   margin: 25px 5px 25px 0;
   float: none;
   display: inline-block;
@@ -29,7 +32,9 @@
   text-transform: uppercase;
   color: #ff4350;
 }
+
 .magazine-list li a {
+
   background-color: #ffffff;
   height: 40px;
   border-radius: 40px;
@@ -37,12 +42,16 @@
   line-height: 23px;
   text-decoration: none;
   border-bottom: none;
+
 }
 .magazine-list li a.form-select .form-control {
+
 	background-color: #0071b3;
 
 }
 .view-filter-magazine .views-row{
+
 	float: left;
 	padding: 15px;
+
 }
