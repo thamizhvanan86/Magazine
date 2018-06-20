@@ -10,33 +10,33 @@ use Drupal\views\Plugin\views\sort\Date;
  * @ViewsSort("evento")
  * @ViewsSort("noticia")
  */
-class Event extends Date {
+class Event extends Date
+{
 
-  /**
-   * Called to add the sort to a query.
-   */
-  public function query() {
+    /**
+     * Called to add the sort to a query.
+     */
+    public function query()
+    {
 
-    $this->ensureMyTable();
+        $this->ensureMyTable();
 
-    $date_alias = "UNIX_TIMESTAMP($this->tableAlias.$this->realField)";
+        $date_alias = "UNIX_TIMESTAMP($this->tableAlias.$this->realField)";
 
-    // Is this event in the past?
-    $this->query->addOrderBy(NULL,
-      "UNIX_TIMESTAMP() > $date_alias",
-      $this->options['order'],
-      "in_past"
-    );
+        // Is this event in the past?
+        $this->query->addOrderBy(null,
+            "UNIX_TIMESTAMP() > $date_alias",
+            $this->options['order'],
+            "in_past"
+        );
 
-    // How far in the past/future is this event?
-    $this->query->addOrderBy(NULL,
-      "ABS($date_alias - UNIX_TIMESTAMP())",
-      $this->options['order'],
-      "distance_from_now"
-    );
+        // How far in the past/future is this event?
+        $this->query->addOrderBy(null,
+            "ABS($date_alias - UNIX_TIMESTAMP())",
+            $this->options['order'],
+            "distance_from_now"
+        );
 
-  }
-  
+    }
+
 }
-
-?>
